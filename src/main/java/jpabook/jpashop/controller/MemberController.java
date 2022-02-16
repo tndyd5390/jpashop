@@ -33,6 +33,7 @@ public class MemberController {
             form.getZipcode());
         Member member = new Member();
         member.setName(form.getName());
+        member.setAddress(address);
         memberService.join(member);
         return "redirect:/";
     }
